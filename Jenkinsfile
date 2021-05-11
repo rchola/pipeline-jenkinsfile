@@ -13,7 +13,7 @@ pipeline {
         stage('Deploy - Fase 2') {
             steps {
                 retry(3) {
-                    sh '/tmp//exemplo-deploy.sh'
+                    sh '/tmp/exemplo-deploy.sh'
                 }
 
                 timeout(time: 3, unit: 'MINUTES') {
