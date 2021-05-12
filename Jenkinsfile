@@ -14,7 +14,7 @@ pipeline {
             steps {
                 retry(3) {
                     sh '/tmp/exemplo-deploy.sh'
-                    scp 
+                    sh 'date'
                 }
 
                 timeout(time: 3, unit: 'MINUTES') {
